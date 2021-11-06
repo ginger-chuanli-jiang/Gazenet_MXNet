@@ -1,4 +1,4 @@
-# Gazenet: head pose estimation without keypoints in GLUON
+# Gazenet: gaze detection in MxNet/GLUON
 
 In retail, sales data is commonly used to identify hot products in stores for marketing. For instance, products that are sold well in other stores are usually marketed to new stores. With the increasingly successful use cases of machine deep learning, especially Convolutional Neural Networks (CNN) in computer vision, however, companies have been combining new insights extracted from images with sales data for marketing strategies. In this blog, we are going to discuss a new set of information from a head pose estimation with Euler angles in MXNet/Gluon.
 
