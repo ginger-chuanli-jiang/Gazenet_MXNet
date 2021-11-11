@@ -1,17 +1,14 @@
 #!/usr/bin/env python
-
 import os
 import numpy as np
 import cv2
 import pandas as pd
-
 import mxnet
+import utils_mxJiang
+
 from mxnet.gluon.data.dataset import Dataset
 from mxnet.gluon.data.vision import transforms
-
 from PIL import Image, ImageFilter
-
-import utils_mxJiang
 
 def get_list_from_filenames(file_path):
     # input:    relative path to .txt file with file names
