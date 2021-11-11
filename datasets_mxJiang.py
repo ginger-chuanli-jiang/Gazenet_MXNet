@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-# convert dataset_mxJiang from Pytorch to MXNet.
-
 import os
 import numpy as np
 import cv2
