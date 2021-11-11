@@ -14,6 +14,10 @@ Similar to Ruiz et al., 2018 and Shao et al., 2019, gazenet employs a pre-traine
 
 The estimated Euler angles can be further aggregated to provide insights about hot product candidates at stores for marketing experiments. This new data, together with traditional sales data, can provide retail stores valuable information to design experiments and drive measurable business impacts.
 
+# To train:
+
+python3 train_gazenet_mxJiang.py --gpu 0 --num_epochs 30 --batch_size 16 --lr 1e-5 --dataset 'AFLW2000' --filename_list '../AFLW2000_filename_filtered.txt' --data_dir '../AFLW2000'
+
 ### References:
 
 ```
