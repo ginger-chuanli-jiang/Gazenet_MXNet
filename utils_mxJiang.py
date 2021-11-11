@@ -1,10 +1,9 @@
-# Convert utils.py from PyTorch to MXNet
-
 import numpy as np
 import os
 import scipy.io as sio
 import cv2
 import math
+
 from math import cos, sin
 
 def softmax_temperature(a, temperature):
