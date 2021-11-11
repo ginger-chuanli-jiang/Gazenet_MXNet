@@ -1,5 +1,3 @@
-# convert PyTorch gazenet scripts to MXNet
-
 from mxboard import SummaryWriter
 import sys, os, argparse, time
 import numpy as np
