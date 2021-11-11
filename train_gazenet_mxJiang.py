@@ -1,24 +1,25 @@
-from mxboard import SummaryWriter
 import sys, os, argparse, time
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 import mxnet as mx
+import mxnet.gluon.data.vision
+import datasets_mxJiang, gazenet_mxJiang_yaw_zoo, gazenet_mxJiang_pitch_zoo,gazenet_mxJiang_roll_zoo
+import mxnet.gluon.model_zoo as model_zoo
+import pickle as pk
+import datetime
+import copy
+import time
+
+from mxboard import SummaryWriter
 from mxnet import gluon
 from mxnet.gluon import nn
 from mxnet.autograd import record
 from mxnet.gluon.data import DataLoader
 from mxnet.gluon.data.vision import transforms
-import mxnet.gluon.data.vision
-import datasets_mxJiang, gazenet_mxJiang_yaw_zoo, gazenet_mxJiang_pitch_zoo,gazenet_mxJiang_roll_zoo
-import mxnet.gluon.model_zoo as model_zoo
-import pickle as pk
 from mxnet import ndarray as nd
 from mxnet.gluon import HybridBlock
-import datetime
-import copy
 from mxnet.gluon.loss import Loss
-import time
 
 def parse_args():
     """Parse input arguments."""
@@ -72,7 +73,6 @@ class compute_cost(Loss):
 if __name__ == '__main__':
     
     mx.random.seed(int(time.time()))
-    
     args = parse_args()
 
     num_epochs = args.num_epochs
@@ -242,3 +242,4 @@ if __name__ == '__main__':
             sw.close()
             exit(0)
             pass
+        
