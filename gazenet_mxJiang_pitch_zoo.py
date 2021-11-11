@@ -1,16 +1,16 @@
+import math
+import time
 import mxnet as mx
+
 from gluoncv import model_zoo, data, utils
 from matplotlib import pyplot as plt
 from mxnet.gluon import HybridBlock
 from mxnet.gluon.model_zoo import vision
-
 from mxnet import gluon
 from mxnet.gluon import nn
 from mxnet.autograd import record
 from mxnet.gluon import Block
-import math
 from mxnet import nd
-import time
 
 def freeze_bn(block):
     try:
