@@ -1,5 +1,3 @@
-# convert PyTorch gazenet.py to Gluon roll.
-
 import mxnet as mx
 from gluoncv import model_zoo, data, utils
 from matplotlib import pyplot as plt
